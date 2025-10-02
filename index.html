@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="id">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Website Saya</title>
+    <title>My Website</title>
     <style>
       body{font-family:system-ui,Arial,sans-serif;max-width:720px;margin:40px auto;padding:0 16px;line-height:1.6}
       header{margin-bottom:24px}
@@ -11,37 +11,67 @@
       nav a{margin-right:12px;text-decoration:none}
       .card{border:1px solid #ddd;border-radius:12px;padding:16px;margin:12px 0}
       footer{margin-top:32px;font-size:14px;opacity:.7}
+      .contact-list{list-style:none;padding:0;margin:0}
+      .contact-list li{margin:6px 0}
+      .label{display:inline-block;min-width:64px;font-weight:600}
     </style>
   </head>
   <body>
     <header>
-      <h1>Halo, saya John Doe 👋</h1>
-      <p>Ini portofolio sederhana saya dengan GitHub Pages.</p>
+      <h1>Hello, I’m Galuh Kresnadian Tedjawinata 👋</h1>
+      <p>This is my simple portfolio built with GitHub Pages.</p>
       <nav>
-        <a href="#about">Tentang</a>
-        <a href="#projects">Proyek</a>
-        <a href="#contact">Kontak</a>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
 
     <section id="about" class="card">
-      <h2>Tentang</h2>
-      <p>Designer & developer. Suka web statis yang cepat dan sederhana.</p>
+      <h2>About</h2>
+      <p>Designer & developer. I like fast, simple static sites.</p>
+    </section>
+
+    <!-- New Research section -->
+    <section id="research" class="card">
+      <h2>Research</h2>
+      <p>Short summary of your research focus and current topics.</p>
+
+      <h3>Interests</h3>
+      <ul>
+        <li>Parametric design & computational geometry</li>
+        <li>AI-assisted design workflows</li>
+        <li>Performance-driven architecture</li>
+      </ul>
+
+      <h3>Selected Works / Publications</h3>
+      <ul>
+        <li><strong>Title of Paper/Project</strong> — Venue/Journal, Year.</li>
+        <li><strong>Another Work</strong> — Conference/Workshop, Year.</li>
+      </ul>
     </section>
 
     <section id="projects" class="card">
-      <h2>Proyek Terbaru</h2>
+      <h2>Latest Projects</h2>
       <ul>
-        <li>Project A – landing page sederhana</li>
-        <li>Project B – komponen UI vanilla JS</li>
+        <li>Project A – simple landing page</li>
+        <li>Project B – vanilla JS UI components</li>
       </ul>
     </section>
 
     <section id="contact" class="card">
-      <h2>Kontak</h2>
-      <p>Email: nama@contoh.com</p>
+      <h2>Contact</h2>
+      <ul class="contact-list">
+        <li><span class="label">Office</span>:
+          <a href="mailto:galuh.kresnadiant@unpar.ac.id">galuh.kresnadiant@unpar.ac.id</a>
+        </li>
+        <li><span class="label">Personal</span>:
+          <a href="mailto:galuhkresnadiant@gmail.com">galuhkresnadiant@gmail.com</a>
+        </li>
+      </ul>
     </section>
 
-    <footer>© 2025 John Doe</footer>
+    <footer>© 2025 Galuh Kresnadian Tedjawinata</footer>
   </body>
 </html>
