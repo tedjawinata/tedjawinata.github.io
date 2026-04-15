@@ -8,7 +8,7 @@
       :root {
         --bg: #050505;
         --card: #121212;
-        --accent: #00ff88;
+        --accent: #00ff88; /* Hijau neon yang fresh */
         --text: #ececec;
         --text-dim: #999;
       }
@@ -62,7 +62,7 @@
 
       p { margin-bottom: 16px; font-size: 1.05rem; }
 
-      /* Collaborator & Partner Styling */
+      /* Collaborator List Styling */
       .collab-item {
         margin-bottom: 20px;
         padding-bottom: 12px;
@@ -70,7 +70,7 @@
       }
       .collab-item:last-child { border-bottom: none; margin-bottom: 0; }
       .collab-name { font-weight: 600; display: block; color: var(--text); }
-      .collab-focus { font-size: 0.85rem; color: var(--text-dim); display: block; margin-bottom: 8px; }
+      .collab-focus { font-size: 0.9rem; color: var(--text-dim); display: block; }
 
       /* Buttons & Links */
       .btn-group {
@@ -90,6 +90,7 @@
         display: inline-flex;
         align-items: center;
         gap: 8px;
+        cursor: pointer;
       }
 
       .btn-primary { background: var(--accent); color: #000; }
@@ -97,8 +98,6 @@
 
       .btn-outline { border: 1px solid #333; color: var(--text); }
       .btn-outline:hover { background: #222; border-color: var(--text-dim); }
-
-      .btn-small { padding: 6px 12px; font-size: 0.75rem; border-radius: 8px; margin-top: 4px; }
 
       .contact-link { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
       .contact-link:hover { border-bottom: 1px solid var(--accent); }
@@ -116,7 +115,6 @@
       @media (max-width: 500px) {
         h1 { font-size: 2rem; }
         .btn { width: 100%; justify-content: center; }
-        .btn-small { width: auto; }
       }
     </style>
   </head>
@@ -130,12 +128,12 @@
         <a href="https://arsitektur.unpar.ac.id/tenaga-pengajar/tedjawinata/" target="_blank" class="btn btn-outline">
           🏛️ UNPAR Profile
         </a>
-        <a href="https://www.linkedin.com/in/galuhkresnadian/" target="_blank" class="btn btn-outline">
-          🔗 Architectonic Research Group
+        <a href="https://arsitektur.unpar.ac.id/arsitektonik/" target="_blank" class="btn btn-outline">
+          🏛️ Architectonic Research Group
         </a>
         <a href="https://www.linkedin.com/in/galuhkresnadian/" target="_blank" class="btn btn-outline">
-          [in] LinkedIn
-        </a>  
+          🔗 LinkedIn
+        </a>
       </div>
     </header>
 
@@ -143,45 +141,72 @@
       
       <section class="card">
         <h2>About Me</h2>
-        <p>An academic who enjoys 'tinkering' with architecture through code. My focus is on <strong>computational design</strong> and <strong>tensile structure</strong> systems.</p>
-        <p>Exploring how algorithms, AI, and lightweight structures can make designs more efficient and material-saving. Data-driven architecture.</p>
+        <p>
+          An academic who enjoys 'tinkering' with architecture through code. My focus is on <strong>computational design</strong> and <strong>tensile structure</strong> systems.
+        </p>
+        <p>
+          I am exploring how algorithms, AI, Tensile Systems, and lightweight structures can make designs more efficient and material-saving.
+        </p>
       </section>
 
       <section class="card">
         <h2>The Tools</h2>
-        <p>Building <strong>TensoMatter</strong> ecosystem:</p>
+        <p>Building an ecosystem to simplify parametric architecture exploration:</p>
+        
         <div class="btn-group">
-          <a href="https://tedjawinata.github.io/TensoMatterWAPS/" target="_blank" class="btn btn-primary">🚀 TensoMatter Web Apps</a>
-          <a href="https://github.com/tedjawinata/TensoMatter" target="_blank" class="btn btn-outline">📦 Grasshopper Plug-In</a>
-          <a href="https://github.com/tedjawinata/TensoMatter" target="_blank" class="btn btn-outline">📦 Nata</a>
-          <a href="https://github.com/tedjawinata/TensoMatter" target="_blank" class="btn btn-outline">📦 Nat4</a>
+          <a href="https://tedjawinata.github.io/TensoMatterWAPS/" target="_blank" class="btn btn-primary">
+            🚀 TensoMatter Web Apps
+          </a>
+          <a href="https://www.food4rhino.com/en/app/half-periodic-table" target="_blank" class="btn btn-primary">
+            🧪 Half Periodic Table (Food4Rhino)
+          </a>
+          <a href="https://github.com/tedjawinata/TensoMatter" target="_blank" class="btn btn-outline">
+            📦 TensoMatter Grasshopper Plug-In
+          </a>
+          <a href="https://github.com/tedjawinata/TensoMatter" target="_blank" class="btn btn-outline">
+            📦 Nata
+          </a>
+          <a href="https://github.com/tedjawinata/TensoMatter" target="_blank" class="btn btn-outline">
+            📦 Nat4
+          </a>
         </div>
+      </section>
+
+      <section class="card">
+        <h2>What I Do</h2>
+        <ul>
+          <li>Parametric & Computational Geometry</li>
+          <li>Structural performance simulation</li>
+          <li>Lightweight structures (Tensile & Membrane)</li>
+          <li>AI-assisted design workflows (BIM + AI)</li>
+        </ul>
       </section>
 
       <section class="card">
         <h2>Partner</h2>
-        <div class="collab-item">
-          <span class="collab-name">Anastasia Maurina, Ph.D</span>
-          <span class="collab-focus">Computational, Bamboo and Parametric Structure</span>
-          <a href="https://arsitektur.unpar.ac.id/tenaga-pengajar/maurina/" target="_blank" class="btn btn-outline btn-small">🏛️ Profile</a>
-        </div>
-        <div class="collab-item">
-          <span class="collab-name">Dr (Cand). Alvin Fernandez Komar</span>
-          <span class="collab-focus">Kinetic Architecture and Structure</span>
-          <a href="https://arsitektur.unpar.ac.id/tenaga-pengajar/komar/" target="_blank" class="btn btn-outline btn-small">🏛️ Profile</a>
-        </div>
+        <span class="collab-name">Anastasia Maurina, Ph.D</span>
+        <span class="collab-focus">Computational, Bamboo and Parametric Structure</span>
       </section>
 
       <section class="card">
-        <h2>Collaborator</h2>
+        <h2>Partner</h2>
+        <span class="collab-name">Alvin Fernandez Komar, Ph.D (Cand)</span>
+        <span class="collab-focus">Kinetic Architecture and Structure</span>
+      </section>
+
+      <section class="card">
+        <h2>Current Collaborators</h2>
+        
         <div class="collab-item">
-          <span class="collab-name">Dr. Didit Sunartio & Aldyfra Luhulima Lukman, Ph.D.</span>
+          <span class="collab-name">Dr. Didit Sunartio & Aldyfra Ph.D.</span>
           <span class="collab-focus">SLF Based Optimization</span>
         </div>
+
         <div class="collab-item">
-          <span class="collab-name">Budianastas Prasyatama Ph.D & Aldyfra Luhulima Lukman, Ph.D</span>
+          <span class="collab-name">Budianastas Prasyatama Ph.D & Aldyfra Ph.D</span>
           <span class="collab-focus">Filament from Plastic Bottle</span>
         </div>
+
         <div class="collab-item">
           <span class="collab-name">Nita Dwi Estika S.T., M.T</span>
           <span class="collab-focus">LiDAR Scan for Heritage Building</span>
@@ -190,18 +215,17 @@
 
       <section class="card">
         <h2>Say Hi!</h2>
-        <p>Want to discuss research or collaboration?</p>
+        <p>Want to discuss research or collaboration? Contact me at:</p>
         <p>
           📧 <a href="mailto:galuh.kresnadiant@unpar.ac.id" class="contact-link">Work Email</a><br>
-          ☕ <a href="mailto:galuhkresnadiant@gmail.com" class="contact-link">Personal Email</a><br>
-          📸 <a href="https://www.instagram.com/galuhkresnadiaan/" target="_blank" class="contact-link">Instagram</a>
+          ☕ <a href="mailto:galuhkresnadiant@gmail.com" class="contact-link">Personal Email</a>
         </p>
       </section>
 
     </main>
 
     <footer>
-      Built by GKT and Simple HTML/CSS @2026
+      Built by GKT and Simple HTML/CSS/ @2026
     </footer>
 
   </body>
